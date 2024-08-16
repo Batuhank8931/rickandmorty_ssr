@@ -10,7 +10,7 @@ interface APIEndpoints {
 
 const HomePage = () => {
   const [endpoints, setEndpoints] = useState<APIEndpoints | null>(null);
-  const router = useRouter(); // Initialize the router
+  const router = useRouter(); 
 
   useEffect(() => {
     const fetchEndpoints = async () => {
@@ -35,21 +35,21 @@ const HomePage = () => {
       <div className="flex space-x-10">
         <button
           className="w-80 py-8 bg-blue-600 text-2xl font-semibold text-white rounded-xl hover:bg-blue-800 transform hover:scale-110 transition-all duration-300"
-          onClick={() => router.push("/characters")} // Use router.push
+          onClick={() => router.push("/characters")} 
         >
           Characters
         </button>
 
         <button
           className="w-80 py-8 bg-green-600 text-2xl font-semibold text-white rounded-xl hover:bg-green-800 transform hover:scale-110 transition-all duration-300"
-          onClick={() => router.push("/locations")} // Use router.push
+          onClick={() => router.push("/locations")} 
         >
           Locations
         </button>
 
         <button
           className="w-80 py-8 bg-purple-600 text-2xl font-semibold text-white rounded-xl hover:bg-purple-800 transform hover:scale-110 transition-all duration-300"
-          onClick={() => router.push("/episodes")} // Use router.push
+          onClick={() => router.push("/episodes")}
         >
           Episodes
         </button>
