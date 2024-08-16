@@ -104,7 +104,7 @@ const CharactersPage = ({
     });
     router.push({
       pathname: "/characters",
-      query: { ...currentFilters, page: "1" }, // Reset to page 1 when applying filters
+      query: { ...currentFilters, page: "1" }, 
     });
   };
 
